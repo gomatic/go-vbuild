@@ -12,4 +12,4 @@ It runs:
 
 # Example
 
-See [cmds/go-versioning](cmds/go-versioning)
+See [cmds/go-versioning](cmds/go-versioning/main.go)
