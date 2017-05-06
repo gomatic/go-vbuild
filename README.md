@@ -1,13 +1,15 @@
-# go-pre-build
+# go-vbuilder
 
-A Go subcommand extender that updates the environment prior to running `go build`.
+A Go subcommand extender that adds `-ldflags -X` variables to
+`go build` and `go install`.
 
-It returns:
+It runs:
 
-	-ldflags -X main.who=${USER}
-	-ldflags -X main.where=${HOST}
-	-ldflags -X main.version=$(git show -s --format=%ct)-$(git log --pretty=format:'%h' -n 1)
+	go (build|install) [args...] -ldflags \
+	  -X github.com/gomatic/go-vbuilder.Who=${USER} \
+	  -X github.com/gomatic/go-vbuilder.Where=${HOST} \
+	  -X github.com/gomatic/go-vbuilder.Patch=$(git show -s --format=%ct)-$(git log --pretty=format:'%h' -n 1)
 
-Which will be sent to `go builg` by [extender](github.com/gomatic/extender) as:
+# Example
 
-    go build -ldflags '-X main.version=[time]-[commit] -X main.who=[user] -X main.where=[host]` 
+See [cmds/go-versioning](cmds/go-versioning)

@@ -1,6 +1,6 @@
 *
 
-!cmds/
+!go-*/
 !.gitignore
 !LICENSE
 !Dockerfile
