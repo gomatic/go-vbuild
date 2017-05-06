@@ -3,6 +3,9 @@
 A Go subcommand [extender](//github.com/gomatic/extender) that adds `-ldflags -X` variables to
 `go build` and `go install`.
 
+[![reportcard](https://goreportcard.com/badge/github.com/gomatic/go-vbuild)](https://goreportcard.com/report/github.com/gomatic/go-vbuild)
+[![build](https://travis-ci.org/gomatic/go-vbuild.svg?branch=master)](https://travis-ci.org/gomatic/go-vbuild)
+
 It runs:
 
 	go (build|install) [args...] -ldflags \
