@@ -1,6 +1,6 @@
 # go-vbuild
 
-A Go subcommand [extender](github.com/gomatic/extender) that adds `-ldflags -X` variables to
+A Go subcommand [extender](//github.com/gomatic/extender) that adds `-ldflags -X` variables to
 `go build` and `go install`.
 
 It runs:
@@ -17,7 +17,7 @@ See [cmds/go-versioning](cmds/go-versioning/main.go)
 # Installation
 
 :warning: This installs `${GOBIN}/go-build`, `${GOBIN}/go-install`. These are not intended to be
-executed directly. They are utilized by [extender](github.com/gomatic/extender) to override the
+executed directly. They are utilized by [extender](//github.com/gomatic/extender) to override the
 `go build` and `go install` commands.
 
     go get github.com/gomatic/go-vbuild
