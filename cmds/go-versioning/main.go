@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/gomatic/go-build"
+	"github.com/gomatic/go-vbuild"
 )
 
 //

@@ -12,7 +12,7 @@ import (
 	"strings"
 
 	"github.com/gomatic/commander"
-	"github.com/gomatic/go-build"
+	"github.com/gomatic/go-vbuild"
 )
 
 var ws = regexp.MustCompile(`[[:space:][:punct:]]`)
